@@ -1,9 +1,14 @@
 .content{
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: lightgray;
+    background-color: purple;
     padding: 20px;
     width:100%;  
+    
+}
+
+h4{
+    color: green
 }
 
 #display{
