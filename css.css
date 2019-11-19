@@ -16,14 +16,25 @@ h4{
 }
 
 #slider{
-    width:  100%
+    width:  100%;
+    
 }
 
 #length{
     display: inline-block;
     width:  100px;
+    background-color: green;
+    font:  purple;
 }
 
 .previous_passwords{
     margin-bottom:  20px;
+    color: hotpink;
 }
+
+button{
+    color: purple;
+    background-color: green;
+}
+
+
