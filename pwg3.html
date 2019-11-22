@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Password Generator</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css.css">
+
+</head>
+<body>
+
+        <script type="text/javascript">
+    var confirmPassword = confirm("Need a password?");
+    var confirmCharacter = confirm("Would you like to include a special character?")
+    var confirmNumbers = confirm("Would you like to include a number?")
+    var confirmLower = confirm("Would you like to include a lower case letter?")
+    var confirmUpper = confirm("Would you like to include an upper case letter?")
+    var specialCharacters = confirm("/!", "/@", "/#", "/$", "/%", "/^", "/&", "/*", "/(","/)");
+    var numbers = confirm("1", "2", "3", "4", "5", "6", "7", "8", "9", "0")
+    var lowerCase = confirm("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z")
+    var upperCase = confirm("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z")
+
+    
+    if (confirmPassword) {
+        alert("I can help with that")
+    }
+    else {
+        alert("Thanks for visiting!")
+    }
+
+if (confirmCharacter) {
+    alert("Select Generate Password")
+}
+else {
+    alert("")
+}
+
+if (confirmNumbers) {
+    alert("Select Generate Password")
+}
+else {
+    alert("")
+}
+
+if (confirmLower) {
+    alert("Select Generate Password")
+}
+else {
+    alert("")
+}
+
+if (confirmUpper) {
+    alert("Select Generate Password")
+}
+else {
+    alert("")
+}
+
+</script>
+
+    <nav class="navbar navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Random Password Generator</a> 
+             </nav>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-8 col-sm-12 mx-auto">
+
+                    <div class ="content">
+                        <h4>Generate a Password</h4>
+                        <br />
+                        <button onclick="generate()" class="btn btn-secondary">Generate Password</button>
+                        
+                        <button onclick="copyPassword()" class="btn btn-secondary">Copy to Clipboard</button>
+                        <div class="previous_passwords">
+                                <b>Previously Generated Passwords</b>
+                               <br/>
+                                <div class id="previous_passwords"></div>
+                            
+</body>
+</html>
