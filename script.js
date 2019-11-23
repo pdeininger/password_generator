@@ -5,8 +5,17 @@ function generate(){
     let complexity = document.getElementById("slider").value;
 
     let values = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+";
+    var confirmUpper = confirm("Would you like to include an upper case letter?")
+    var specialCharacters = confirm("/!", "/@", "/#", "/$", "/%", "/^", "/&", "/*", "/(","/)");
+    var numbers = confirm("1", "2", "3", "4", "5", "6", "7", "8", "9", "0")
+    var lowerCase = confirm("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z")
+    var upperCase = confirm("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z")
+
+
 
     let password ="";
+
+    var confir
 
     //create for loop to choose password characters
     for(var i = 0; i<= complexity; i++){
@@ -42,6 +51,8 @@ function copyPassword(){
 
         alert("Password copied to clipboard");
 }
+
+
 
 
 
